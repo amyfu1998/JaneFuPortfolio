@@ -27,6 +27,7 @@ $p-white:#e7e5da;
         max-width: 1440px;
         padding-left: 8%;
         padding-right: 8%;
+        padding-bottom: 200px;
 
         .col-work {
             display: grid;
@@ -93,7 +94,7 @@ $p-white:#e7e5da;
 
             }
 
-            .works:nth-child(odd) {
+            .works:nth-child(even) {
                 margin-top: 7em;
             }
 
