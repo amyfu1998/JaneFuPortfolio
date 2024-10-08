@@ -115,7 +115,10 @@ nav .nav-link a {
   font-size: 18px;
   color: rgb(46, 46, 40);
 }
-
+.fwcursor {
+  margin: auto;
+  cursor: url("../img/cursor1.png"), auto;
+}
 .wrapper {
   padding: 10px;
   margin: 20px auto;
@@ -518,10 +521,10 @@ button:focus {
   z-index: 100;
 }
 .cardList__btn.btn--left {
-  left: -5%;
+  left: -15%;
 }
 .cardList__btn.btn--right {
-  right: -5%;
+  right: -15%;
 }
 .cardList__btn .icon {
   width: 100%;
