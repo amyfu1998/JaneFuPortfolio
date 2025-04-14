@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+          font-family: 'Noto Sans TC', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #fff8f3;
+          color: #2c2c2c;
+          line-height: 1.8;
+        }
+        main.project-page {
+          padding: 100px 20px;
+          max-width: 960px;
+          margin: 0 auto;
+        }
+        section {
+          margin-bottom: 80px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        section.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .hero {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .hero-text h1 {
+          font-size: 2.5em;
+          margin: 0;
+          color: #d46b5c;
+        }
+        .hero-text h2 {
+          font-size: 1.5em;
+          color: #7e6651;
+        }
+        .hero-text p {
+          color: #a68a6d;
+        }
+        .hero-img img {
+          width: 100%;
+          max-width: 800px;
+          margin-top: 20px;
+          border-radius: 10px;
+        }
+        .intro, .reflection, .result {
+        background-color: #f0eeec;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+          opacity: 0.6;
+        }
+        .goal-role, .problem-analysis {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          align-items: center;
+        }
+        .goal-role .text, .problem-analysis .text {
+          flex: 1;
+          min-width: 280px;
+        }
+        .goal-role .image img, .problem-analysis .image img {
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+          transition: transform 0.3s ease;
+        }
+
+        .goal-role .image img:hover, .problem-analysis .image img:hover {
+          transform: scale(1.05);
+        }
+        .design-process .step {
+          margin-bottom: 40px;
+        }
+        .design-process h4 {
+          margin-bottom: 10px;
+          color: #b85c50;
+        }
+        .design-process img {
+          width: 100%;
+          max-width: 700px;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+          transition: transform 0.3s ease;
+        }
+        .design-process img:hover {
+          transform: scale(1.02);
+        }
+        ul {
+          padding-left: 20px;
+        }
+        ul li {
+          margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+          .goal-role, .problem-analysis {
+            flex-direction: column;
+          }
+          .hero-text h1 {
+            font-size: 2em;
+          }
+          .hero-text h2 {
+            font-size: 1.2em;
+          }
+        }
+      </style>
+    <title>Jane Fu</title>
+    <link rel="icon"  href="./titleicon.ico" >
+    <link rel="stylesheet" href="./css/all.css">
+ 
+</head>
+<body>
+    <div >
+        <header>
+            <nav>
+                <h3 class="logo"><a href="./index.html"><img src="./img/Group 1.png" alt=""> JANE FU</a></h3>
+                <ul class="nav-link">
+                    <li><a href="./index.html"> ABOUT</a></li>
+                    <li><a href="./work.html"> WORK</a></li>
+                    <li><a href="./portfolio.pdf"> RESUME</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="workdetail">
+            
+          <main class="project-page">
+            <section class="hero">
+              <div class="hero-text">
+                <h1>Wondercise O2O 課程系統</h1>
+                <h2>用 MVP 思維整合線上線下體驗</h2>
+                <p>快速設計與開發、整合多方角色需求的課程管理平台</p>
+              </div>
+              <div class="hero-img">
+                <img src="img/8-1.jpg" alt="Wondercise O2O 封面圖">
+              </div>
+            </section>
+        
+            <section class="intro">
+              <p>本專案為 Wondercise 所規劃之 O2O 課程系統，目標是整合線下場館、教練、後台營運與線上會員的操作需求，並在有限時間內設計出可行的 MVP，兼顧體驗與開發效益。設計過程中，我以系統化觀點出發，規劃功能模組、資訊結構與界面設計，確保各方操作邏輯一致，並能迅速上線驗證成效。</p>
+            </section>
+        
+            <section class="goal-role">
+              <div class="text">
+                <h3>🎯 專案目標</h3>
+                <ul>
+                  <li>以 MVP 思維快速驗證產品可行性</li>
+                  <li>整合線上、線下、教練、營運端需求</li>
+                  <li>設計操作簡潔、結構一致的系統介面</li>
+                  <li>降低開發與維護成本</li>
+                </ul>
+                <h3>🧑 我的角色</h3>
+                <ul>
+                  <li>UI/UX 設計師</li>
+                  <li>負責跨角色需求整合與流程優化</li>
+                  <li>制定資訊架構與界面規範</li>
+                  <li>協作工程與 PM，落實最小可行產品</li>
+                </ul>
+              </div>
+              <div class="image">
+                <img src="img/8-2.jpg" alt="角色與任務圖">
+              </div>
+            </section>
+        
+            <section class="problem-analysis">
+              <div class="text">
+                <h3>❗ 現況挑戰</h3>
+                <ul>
+                  <li>原有系統以線上串流為主，缺乏支援線下場館營運的完整流程</li>
+                  <li>在有限的時間成本與人力去做出一個ＭＶＰ版本</li>
+                  <li>營運端需額外使用 Excel 或第三方工具進行場地與時段管理</li>
+                  <li>從0開始開發可能會較符合情境，但成本過高</li>
+                  
+                </ul>
+                <h3>🔎 洞察分析</h3>
+                <li>需以「教練日常工作」為核心設計流程，並讓會員端清楚呈現課表與打卡資訊。</li>
+                <li>分析出每個情境的必要使用者故事，並融合出可相互通用的設計</li>
+                <li>以現有的系統去設計出符合使用者體驗且滿足最低開發成本的版本</li>
+
+              </div>
+              <div class="image">
+                <img src="img/8-3.jpg" alt="洞察分析圖">
+              </div>
+            </section>
+        
+            <section class="design-process">
+              <h3>🧭 設計流程</h3>
+              <div class="step">
+                <h4>Step 1｜盤點使用者角色與流程</h4>
+                <img src="img/8-5.png" alt="使用者流程圖">
+              </div>
+              <div class="step">
+                <h4>Step 2｜建立課程規則與場館邏輯</h4>
+                <img src="img/8-4.png" alt="課程規則邏輯圖">
+              </div>
+              <div class="step">
+                <h4>Step 3｜ UI 設計</h4>
+                <img src="img/8-6.gif" alt="教練 UI Mockup" style="
+    width: 30%;
+">
+<img src="img/8-7.gif" alt="教練 UI Mockup" style="
+width: 30%;
+">
+<img src="img/8-11.png" alt="教練 UI Mockup" style="
+width: 30%;
+">
+                <img src="img/8-9.jpg" alt="教練 UI Mockup">
+               
+                <img src="img/8-10.jpg" alt="教練 UI Mockup">
+
+              </div>
+             
+            </section>
+        
+            <section class="result">
+              <h3>✅ 成效成果</h3>
+              <ul>
+                <li><strong>上線速度快、有效驗證商業模式：</strong>從設計到開發僅花費三個月完成 MVP 上線，有效支援 O2O 課程整合與營運驗證。</li>
+                <li><strong>多角色系統成功整合：</strong>系統設計同時滿足教練、線上學員、線下學員與營運後台的操作需求，使用邏輯一致、操作易於上手。</li>
+                <li><strong>降低開發與維運成本：</strong>資訊架構模組化設計、元件可複用，有效降低後續擴充與維運人力。</li>
+              </ul>
+            </section>
+        
+            <section class="reflection">
+              <h3>🧠 專案反思</h3>
+              <p>最大挑戰在於：需滿足不同使用者（如教練與學員）對於介面與功能的期待，並維持操作一致性與流程順暢性。我也學習如何在初期就明確定義需求邊界，透過模組化設計兼顧靈活擴充與後續迭代。但因為快速版本也導致某些運動（類似瑜珈）的體驗情境不符合的狀況產生。</p>
+
+            </section>
+          </main>
+          <div class="changepage">
+            <div class="left">
+                <a  style="text-decoration:none;" href="./work7.html">
+                <div class="back"alt="back">Back</div></a>
+            </div>
+            <div class="right">
+                <a  style="text-decoration:none;"href="./work2.html">
+                <div class="next" alt="next"> Next  </div></a>
+               
+            </div>
+        </div>
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

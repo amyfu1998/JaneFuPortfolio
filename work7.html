@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+          font-family: 'Noto Sans TC', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #fff8f3;
+          color: #2c2c2c;
+          line-height: 1.8;
+        }
+        main.project-page {
+          padding: 100px 20px;
+          max-width: 960px;
+          margin: 0 auto;
+        }
+        section {
+          margin-bottom: 80px;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        section.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .hero {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .hero-text h1 {
+          font-size: 2.5em;
+          margin: 0;
+          color: #d46b5c;
+        }
+        .hero-text h2 {
+          font-size: 1.5em;
+          color: #7e6651;
+        }
+        .hero-text p {
+          color: #a68a6d;
+        }
+        .hero-img img {
+          width: 100%;
+          max-width: 800px;
+          margin-top: 20px;
+          border-radius: 10px;
+        }
+        .intro, .reflection, .result {
+        background-color: #f0eeec;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+          opacity: 0.6;
+        }
+        .goal-role, .problem-analysis {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          align-items: center;
+        }
+        .goal-role .text, .problem-analysis .text {
+          flex: 1;
+          min-width: 280px;
+        }
+        .goal-role .image img, .problem-analysis .image img {
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+          transition: transform 0.3s ease;
+        }
+        .goal-role .image img:hover, .problem-analysis .image img:hover {
+          transform: scale(1.05);
+        }
+        .design-process .step {
+          margin-bottom: 40px;
+        }
+        .design-process h4 {
+          margin-bottom: 10px;
+          color: #b85c50;
+        }
+        .design-process img {
+          width: 100%;
+          max-width: 700px;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+          transition: transform 0.3s ease;
+        }
+        .design-process img:hover {
+          transform: scale(1.02);
+        }
+        ul {
+          padding-left: 20px;
+        }
+        ul li {
+          margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+          .goal-role, .problem-analysis {
+            flex-direction: column;
+          }
+          .hero-text h1 {
+            font-size: 2em;
+          }
+          .hero-text h2 {
+            font-size: 1.2em;
+          }
+        }
+      </style>
+    <title>Jane Fu</title>
+    <link rel="icon"  href="./titleicon.ico" >
+    <link rel="stylesheet" href="./css/all.css">
+ 
+</head>
+<body>
+    <div >
+        <header>
+            <nav>
+                <h3 class="logo"><a href="./index.html"><img src="./img/Group 1.png" alt=""> JANE FU</a></h3>
+                <ul class="nav-link">
+                    <li><a href="./index.html"> ABOUT</a></li>
+                    <li><a href="./work.html"> WORK</a></li>
+                    <li><a href="./portfolio.pdf"> RESUME</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="workdetail">
+            
+            <main class="project-page">
+                <!-- 封面區 -->
+                <section class="hero">
+                  <div class="hero-text">
+                    <h1>Wondercise web</h1>
+                    <h2>推薦系統設計與 Onboarding 優化</h2>
+                    <p>提升用戶首次體驗與平台轉換率</p>
+                  </div>
+                  <div class="hero-img">
+                    <img src="img/7-1.png" alt="Wondercise 封面圖">
+                  </div>
+                </section>
+            
+                <!-- 簡介區 -->
+                <section class="intro">
+                  <p>Wondercise 是一款串流健身平台，致力於提供即時健身課程與個人化教練推薦。本次專案聚焦於提升新用戶的 onboarding 體驗，並設計一套推薦系統，協助使用者快速找到適合自己的健身課程，從而提高整體轉換率與黏著度。</p>
+                </section>
+            
+                <!-- 目標與角色 -->
+                <section class="goal-role">
+                  <div class="text">
+                    <h3>🎯 專案目標</h3>
+                    <ul>
+                      <li>精簡 onboarding 流程，提升註冊率</li>
+                      <li>設計推薦模組，引導使用者快速體驗</li>
+                      <li>提升首次課程播放與留存率</li>
+                    </ul>
+                    <h3>🧑 我的角色</h3>
+                    <ul>
+                      <li>擔任 UX/UI 設計師與 Web 產品負責人</li>
+                      <li>主導使用者研究、資訊架構與設計產出</li>
+                      <li>與資料團隊共創推薦邏輯</li>
+                      <li>協作前後端將設計落地</li>
+                    </ul>
+                  </div>
+                  <div class="image">
+                    <img src="img/7-6.png" alt="協作流程圖">
+                  </div>
+                </section>
+            
+                <!-- 問題分析 -->
+                <section class="problem-analysis">
+                  <div class="text">
+                    <h3>❗ 問題發現</h3>
+                    <ul>
+                      <li>有特定偏好教練的使用者活躍度與生命週期較高</li>
+                      <li>缺乏引導與內容推薦，使用動機不明確</li>
+                      <li>首次課程播放率 偏低，流失高</li>
+                    </ul>
+                    <h3>🔎 洞察重點</h3>
+                    <p>個人化推薦可有效激發「這就是為我設計的」感受，提升轉換率。</p>
+                    <p>當用戶可以找到自己喜愛的教練時，有助於提高用戶訓練留存率。</p>
+                  </div>
+                  <div class="image">
+                    <img src="img/7-3.png" alt="數據洞察圖">
+                 
+
+                  </div>
+                </section>
+            
+                <!-- 設計流程 -->
+                <section class="design-process">
+                  <h3>🧭 設計流程</h3>
+                  <div class="step">
+                    <h4>Step 1｜與資料科學團隊共構推薦邏輯</h4>
+                    <img src="img/7-5.png" alt="推薦邏輯圖">
+                  </div>
+                  <div class="step">
+                    <h4>Step 2｜訂定User Story </h4>
+                    <img src="img/7-2.png" alt="onboarding 新舊比較">
+                  </div>
+                  <div class="step">
+                    <h4>Step 3｜為你推薦模組設計</h4>
+                    <img src="img/7-7.png" alt="UI 模組設計">
+                    <img src="img/7-8.gif" alt="UI 模組設計"style="width: 70%;">
+                    <img src="img/7-9.gif" alt="UI 模組設計"style="width: 25%;">
+
+                  </div>
+                </section>
+            
+                <!-- 成效區 -->
+                <section class="result">
+                  <h3>📈 成效成果</h3>
+                  <ul>
+                    <li>註冊轉換率提升 25%</li>
+                    <li>新用戶影片訓練提升20%</li>
+                    <li>推薦模組 CTR 達到 60%</li>
+                  </ul>
+                </section>
+            
+                <!-- 反思區 -->
+                <section class="reflection">
+                  <h3>🧠 專案反思</h3>
+                  <p>
+                    這次與資料科學團隊協作，讓我深刻理解推薦系統不只是演算法，而是 UX 如何塑造「這就是為我設計的」感受。
+                  </p>
+                  <p>
+                    如果時間允許，我會進行長期追蹤，讓推薦模組在實際使用中持續進化，並找出不同族群的行為模式，實現更精準的推薦策略。
+                  </p>
+                </section>
+              </main>
+              <div class="changepage">
+                <div class="left">
+                    <a  style="text-decoration:none;" href="./work6.html">
+                    <div class="back"alt="back">Back</div></a>
+                </div>
+                <div class="right">
+                    <a  style="text-decoration:none;"href="./work8.html">
+                    <div class="next" alt="next"> Next  </div></a>
+                   
+                </div>
+            </div>
+        </div>
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
